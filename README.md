@@ -4,3 +4,4 @@
 - [Aleksander Theo Strand](https://github.com/simula/forzify/tree/main/aleksander-theo-strand) - SoccerRAG: Multimodal Soccer Information Retrieval via Natural Queries, 2024 (PDF)
 - [Joel Yacob Teklemariam](https://github.com/simula/forzify/tree/main/joel-yacob-teklemariam) - Automatic Detection of Soccer Events using Game Audio and Large Language Models, 2024 (PDF)
 - [Evan Jåsund Kassab](https://github.com/simula/forzify/tree/main/evan-jåsund-kassab) - TACDEC: Developing Automatic AI-Based Tackle Detection for Soccer, 2024 (PDF)
+- [Mehdi Houshmand Sarkhoosh](https://github.com/simula/forzify/tree/main/mehdi-houshmand-sarkhoosh) - Multimodal AI-Based Summarization and Storytelling for Soccer on Social Media, 2024 (PDF)
