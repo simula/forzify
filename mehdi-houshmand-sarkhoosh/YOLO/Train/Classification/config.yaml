@@ -1,0 +1,19 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+
+# parent
+# ├── Ellitesserien 
+# └── datasets
+#     └── 1200 images  ← downloads here (283 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /home/mehdihou/D1/YOLO-Train/Train/Classification_Dataset              # dataset root dir
+train: /home/mehdihou/D1/YOLO-Train/Train/Classification_Dataset/train       # train images (relative to 'path')
+val: /home/mehdihou/D1/YOLO-Train/Train/Classification_Dataset/valid       # val images (relative to 'path')
+
+
+
+# number of classes
+nc: 3
+
+# class names
+names: ["CloseupShot","LongShot","MediumShot"]

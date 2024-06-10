@@ -1,1 +1,125 @@
 # Mehdi Houshmand Sarkhoosh - Multimodal AI-Based Summarization and Storytelling for Soccer on Social Media
+
+## SoccerSum
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10612084.svg)](https://doi.org/10.5281/zenodo.10612084)
+[![Demonstration Paper](https://img.shields.io/badge/ACM-Demonstration%20paper-red)](https://doi.org/10.1145/3625468.3652197)
+[![Dataset Paper](https://img.shields.io/badge/ACM-Dataset%20paper-green)](https://doi.org/10.1145/3625468.3652180)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model%20Card-yellow)](https://huggingface.co/SimulaMet-HOST/SoccerSum)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)]()
+[![Coverage](https://img.shields.io/badge/coverage-90%25-brightgreen)]()
+
+
+## Abstract
+The rapid advancement of technology has been revolutionizing the field of sports media, where there is a growing need for sophisticated data processing methods. Current methodologies for extracting information from soccer broadcast videos to generate game highlights and summaries for social media are predominantly manual and rely heavily on text-based NLP techniques, overlooking the rich visual and auditory information available. In response to this challenge, our research introduces SoccerSum, a tool that innovates in the field by integrating computer vision, audio analysis with advanced language models like GPT-4. This multimodal approach enables automated, enriched content summarization, including detection of players and key field elements, thereby enhancing the metadata used in summarization algorithms. SoccerSum uniquely combines textual and visual data, offering a comprehensive solution for generating accurate, platform-specific content. This development represents a significant advancement in automated, data-driven sports media dissemination, and sets a new benchmark in the realm of soccer information extraction. A video of the demo can be found here: [Demonstration Video](https://youtu.be/za4VIi2ARXY).
+
+
+## Dataset
+The SoccerSum dataset was curated by capturing and annotating soccer videos from the Norwegian Eliteserien league. This collection spans three years, covering 2021, 2022, and 2023. It comprises 750 frames from 41 unique sequences, with 4 to 40 frames per sequence, carefully chosen to represent a diverse selection of scenarios encountered in professional soccer games.
+- **Zenodo Record**: [SoccerSum dataset on Zenodo](https://zenodo.org/records/10612084)
+- **Simula Dataset Page**: [Link to page](https://datasets.simula.no/soccersum/)
+
+
+> [!TIP]
+> How to use SoccerSum?
+
+
+## Source Code
+- **Repository**: [SoccerSum GitHub](https://github.com/simula/SoccerSum)
+- **Programming Languages**: Python, JavaScript, HTML, CSS, AJAX
+- **Python Version**: Python 3.11
+
+## Packages and Libraries
+- **Required Python Packages**: `flask`, `re`, `torch`, `torchvision`, `ultralytics`, `cv2`, `numpy`, `requests`, `openai`, `whisper`, `librosa`, `sklearn.feature_extraction.text`, `sklearn.metrics.pairwise`, `matplotlib`, `mpl_toolkits.mplot3d`
+
+## Hardware Requirements
+- **System Tested On**: Linux
+- **GPU Requirement**: At least 1 GPU with 4 GB VRAM
+
+## Installation and Experimentation
+
+### Setup
+1. Clone the SoccerSum repository:
+   ```
+   git clone https://github.com/simula/SoccerSum
+   ```
+
+2. Install the necessary requirements:
+   ```
+   cd SoccerSum
+   pip install -r requirements.txt
+   ```
+
+3. Download the model weights for Detection, Segmentation, and Classification: [SoccerSum HuggingFace repository](https://huggingface.co/SimulaMet-HOST/SoccerSum)
+
+4. Place the weights in the `weights` folder. Adjust paths in `main.py`.
+
+### Running the Application
+1. Ensure port 5000 is free on your machine.
+
+2. Start the Flask application:
+   ```
+   python3 app.py
+   ```
+
+3. The GUI will open in your default web browser.
+
+### Usage
+- Provide the path to a Goal event file (MP4 or M3U8 URL).
+- A valid OPENAI API Access Token for GPT-4 is required.
+- The system processes a 30-second clip in about 1 minute; longer clips take more time.
+- Progress is shown on the GUI sidebar.
+
+
+#### Video
+<div align="center">
+  <img src="https://github.com/simula/SoccerSum/blob/main/img/demonstration-video.gif?raw=true" alt="SoccerSum Demonstration" style="max-width: 100%;">
+</div>
+
+
+
+
+
+## Acknowledgements
+
+### $\color{black}{This\ research\ was\ partly\ funded\ by\ the\ Research\ Council\ of\ Norway\,\ project\ number\ 346671.\ }$ ([AI-storyteller](https://prosjektbanken.forskningsradet.no/project/FORISS/346671)). 
+
+
+## Citations
+> [!IMPORTANT]
+> Please cite our research using the following BibTeX entries:
+
+
+
+<pre><code>
+@incollection{Houshmand_MMSYS_ODS,
+  author = {Houshmand Sarkhoosh, Mehdi and Midoglu, Cise and Shafiee Sabet, Saeed and Halvorsen, P{\aa}l},
+  title = {{The SoccerSum Dataset for Automated Detection, Segmentation, and Tracking of Objects on the Soccer Pitch}},
+  booktitle = {{MMSys'24 : The 15th ACM Multimedia Systems Conference}},
+  year = {2024},
+  month = apr,
+  date = {2024-04-15},
+  urldate = {2024-04-15},
+  isbn = {979-8-4007-0412-3/24/04},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3625468.3652180}
+}
+</code></pre>
+
+<pre><code>
+@incollection{Houshmand_MMSYS_demo,
+  author = {Houshmand Sarkhoosh, Mehdi and Midoglu, Cise and Shafiee Sabet, Saeed and Halvorsen, P{\aa}l},
+  title = {{Multimodal AI-Based Summarization and Storytelling for Soccer on Social Media}},
+  booktitle = {{MMSys'24 : The 15th ACM Multimedia Systems Conference}},
+  year = {2024},
+  month = apr,
+  date = {2024-04-15},
+  urldate = {2024-04-15},
+  isbn = {979-8-4007-0412-3/24/04},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3625468.3652197}
+}
+</code></pre>
