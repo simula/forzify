@@ -51,5 +51,5 @@ Developed in collaboration with:
 
 ## Demo
 
-Watch the demo video: [https://www.youtube.com/watch?v=rMmYOCM-k7A&ab_channel=SimulaMet-HOST](https://www.youtube.com/watch?v=rMmYOCM-k7A&ab_channel=SimulaMet-HOST)
+Watch the demo video: (https://www.youtube.com/watch?v=rMmYOCM-k7A&ab_channel=SimulaMet-HOST)
 
