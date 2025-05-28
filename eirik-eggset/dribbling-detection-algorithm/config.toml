@@ -1,0 +1,40 @@
+[general]
+review_mode = false # Allows user to download the data as structured annotated data
+num_cores = 10  # Number of CPU cores to be used. Is set to 1 if video mode is "display"
+log_level = "debug"  # Possible values: "debug", "info", "warn", "error"
+video_mode = "none" # Possible values: "download", "display" or "none" (If using SSH display might be slow)
+
+[dribbling_detection]
+use_2d = false # Whether to use homographically transformed 2d coordinates or image bounding boxes
+outer_threshold = 3 # Minumum number of frames in an event. Mainly to prevent predictions of jumping 2d coords
+inner_threshold = 4 # The time a player is within the inner threshold does not count to outer
+frame_skip = 1
+min_duration = 1.3  # Minimum duration for an action to be classified as dribbling
+inner_radius = 0.8 # Percent of screen from ball
+outer_radius = 2.7
+# inner_radius = 1.3 # Percent of screen from ball
+# outer_radius = 2.2
+outer_in_threshold = 2
+outer_out_threshold = 8
+ignore_person_classes = true
+ignore_teams = true
+
+[visualization]
+autoplay = true
+scale_factor = 0.6 # Scale factor for video and player bounding boxes. Usually best to keep at 1 if downloading
+minimap_x = 20
+minimap_y = 200
+minimap_width = 926 # Recommended resolution: 926x600. Scale based on display, but keep similar ratio
+minimap_height = 600
+x_min = -52.0
+x_max = 52.0
+y_min = -34.0
+y_max = 34.0
+
+[data] # If using Docker: append  './' to the start of your paths
+data_path = "/home/eirik/Projects/data/dribbling-clips/outputs/run_2025-02-25_01-15-08"
+# subsets = ["train", "valid", "test", "challenge"]
+subsets = ["interpolated-predictions"]
+dribble_events_path = "/home/eirik/Projects/dribbling-detection-algorithm/data/output/dribble_events.json"
+output_path = "/home/eirik/Projects/dribbling-detection-algorithm/data/output"
+huggingface_dataset_url = "https://datasets-server.huggingface.co/first-rows?dataset=SoccerNet%2FSN-GSR-2025&config=default"
