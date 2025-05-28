@@ -13,3 +13,4 @@
 
 ## 2025
 - [Eirik Eggset](https://github.com/simula/forzify/tree/main/eirik-eggset) - From Pixels to Play: Dribble and Tackle Detection in Football, 2025 (PDF)
+- [Ole Kristian Rustebakke](https://github.com/simula/forzify/tree/main/ole-kristian-rustebakke) - Extracting Player Speed from Football Videos, 2025 (PDF)
