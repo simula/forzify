@@ -2,7 +2,7 @@
 
 ## Repository Description
 
-This repository contains the Finite State Machine (FSM) used to detect dribbles and tackles from association football (soccer) videos, which is in the `dribble-detection-algorithm` folder. The full pipeline going from video to predictions is in the `dribbling-detection-pipeline` folder. The full pipeline folder also contains the video sources as well as the annotations.
+This repository contains the Finite State Machine (FSM) used to detect dribbles and tackles from association football (soccer) videos, which is in the `dribbling-detection-algorithm` folder. The full pipeline going from video to predictions is in the `dribbling-detection-pipeline` folder. The full pipeline folder also contains the video sources as well as the annotations.
 
 ## Abstract
 
