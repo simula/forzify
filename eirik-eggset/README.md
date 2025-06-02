@@ -1,5 +1,11 @@
 # Eirik Eggset - From Pixels to Play: Dribble and Tackle Detection in Football
 
+## Repository Description
+
+This repository contains the Finite State Machine (FSM) used to detect dribbles and tackles from association football (soccer) videos, which is in the `dribble-detection-algorithm` folder. The full pipeline going from video to predictions is in the `dribbling-detection-pipeline` folder. The full pipeline folder also contains the video sources as well as the annotations.
+
+## Abstract
+
 The automated analysis of fine-grained interactions in sports videos, such as dribbles and tackles in football (soccer), faces significant challenges, primarily the scarcity of large-scale annotated datasets for these specific, non-official events. This thesis confronts this gap by developing and evaluating a novel methodology to automatically detect dribble and tackle events directly from raw football broadcast video.
 
 The core of this solution is a knowledge-driven Finite State Machine (FSM) that models observable player movement patterns. This FSM utilizes player and ball positional data, which are automatically extracted through a comprehensive multi-stage pipeline. This pipeline includes video preprocessing, customized YOLO-based object detection, and annotation interpolation—a technique found to critically enhance both detection accuracy (as measured by mAP) and computational efficiency.
