@@ -1,0 +1,17 @@
+train: /train
+val: /val
+
+nc: 10
+names:
+  [
+    "Full field",
+    "Big rect. left",
+    "Big rect. right",
+    "Goal left",
+    "Goal right",
+    "Circle right",
+    "Circle left",
+    "Circle central",
+    "Small rect. left",
+    "Small rect. right",
+  ]
