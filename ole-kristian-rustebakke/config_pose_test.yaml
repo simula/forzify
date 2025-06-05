@@ -1,0 +1,11 @@
+path: /itf-fi-ml/home/olekrus/master/master/Data # dataset root dir
+train: /itf-fi-ml/home/olekrus/master/master/Data/train  # train images 
+val: /itf-fi-ml/home/olekrus/master/master/Data/test  # Really test images 
+
+
+# Keypoints
+kpt_shape: [43, 3] # number of keypoints, number of dims (2 for x,y or 3 for x,y,visible)
+
+# Classes dictionary
+names:
+    0: "Football pitch"

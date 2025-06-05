@@ -1,0 +1,13 @@
+*.png
+*.txt
+*.json
+*.mp4
+*.jpg
+*.csv
+*.zip
+*.pdf
+*.pt
+*.pth
+dribbling-detection-pipeline
+myenv
+soccernet
